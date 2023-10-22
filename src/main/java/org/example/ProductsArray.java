@@ -3,7 +3,8 @@ package org.example;
 import java.util.Arrays;
 
 public class ProductsArray {
-    public static void main(String[] args) {
+
+
         String[] products = {
                 "Leche",
                 "Pan",
@@ -27,15 +28,17 @@ public class ProductsArray {
                 "Detergente"
         };
 
-    showProducts(products, "a");
-    printProductsInOrder(products);
+    public static void showListOfProducts(String[] products){
+        for (String p: products) {
+            System.out.println(p);
 
+        }
     }
-    public static void showProducts(String[] arr, String letter){
+    public static void showProductsStartWith(String[] products, String letter){
 
         System.out.println("\n productos que empiezan por la letra " + letter + ": \n ");
 
-        for (String product : arr) {
+        for (String product : products) {
             if (product.startsWith(letter.toUpperCase())) {
                 System.out.println("* " + product);
             }
@@ -50,4 +53,5 @@ public class ProductsArray {
             System.out.println(product);
         }
     }
+
 }
