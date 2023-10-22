@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class ProductsArray {
 
-
         String[] products = {
                 "Leche",
                 "Pan",
